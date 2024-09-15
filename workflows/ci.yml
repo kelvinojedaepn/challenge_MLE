@@ -10,8 +10,9 @@ on:
     branches: [ master, develop ]
 
 jobs:
+
   test-model:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
       # Clona el repositorio
@@ -43,7 +44,7 @@ jobs:
         run: make model-test
 
   test-api:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
       # Clona el repositorio
@@ -75,7 +76,7 @@ jobs:
         run: make api-test
 
   lint:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
       # Clona el repositorio
