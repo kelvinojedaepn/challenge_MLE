@@ -1,3 +1,4 @@
+runs-on: self-hosted
 name: 'Continuous Integration'
 
 on:
